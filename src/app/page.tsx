@@ -17,7 +17,7 @@ export default function Home() {
       url: "https://github.com/ManasMalla",
     },
   ];
-
+//
   const frontendTeam = [
     {
       name: "Kavya\nChandana",
