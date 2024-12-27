@@ -17,7 +17,7 @@ export default function Home() {
       url: "https://github.com/ManasMalla",
     },
   ];
-//
+  //
   const frontendTeam = [
     {
       name: "Kavya\nChandana",
@@ -124,6 +124,31 @@ export default function Home() {
             <p className="text-end text-xl font-bold">25th</p>
             <p className="text-end mb-3">Dec&apos;24</p>
             <p className="text-xl">GIT FUSION</p>
+            <p className="text-[#99d5ff]">Cotton Bhavan</p>
+            <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col justify-center items-center mx-auto my-6">
+        <h3 className="text-3xl mb-4">Our domains</h3>
+        <div className="flex gap-12 justify-center items-center mt-12 w-screen overflow-clip">
+          <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
+
+
+            <p className="text-xl">Web Dev</p>
+            <p className="text-[#99d5ff]">TECHNICAL</p>
+            <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
+          </div>
+          <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
+
+            <p className="text-xl">Marketing</p>
+            <p className="text-[#99d5ff]">NON-TECH</p>
+            <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
+          </div>
+          <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
+
+            <p className="text-xl">&apos;LOREM</p>
             <p className="text-[#99d5ff]">Cotton Bhavan</p>
             <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
           </div>
