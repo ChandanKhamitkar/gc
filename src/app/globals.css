@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.customBG {
+  background: linear-gradient(to bottom, #000240, #0d1117 117%);
+}
+
+/* .home {
+  position: relative;
+}
+.home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  width: 2.5px;
+  margin: 10px auto 0;
+  height: 2.5px;
+  border-radius: 100%;
+  background-color: white;
+} */
+
+.mainGrad {
+  background: radial-gradient(
+    81.37% 74.47% at 50% 55.71%,
+    rgba(154, 124, 255, 0.85) 36.75%,
+    rgba(14, 10, 162, 0) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  filter: blur(35.28000259399414px);
+}
+.recBox {
+  border-radius: 28px 28px 0px 0px;
+  border: 1px solid #8c93fb;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.joinNow {
+  display: inline-flex;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 48px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(23.049999237060547px);
+}
+
+.knowMore {
+  display: inline-flex;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 48px;
+  border: 1px solid #d6cdff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(23.049999237060547px);
+}
