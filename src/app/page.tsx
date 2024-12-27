@@ -4,6 +4,57 @@ import { BsGithub } from "react-icons/bs";
 import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Home() {
+  const executive = [
+    {
+      name: "Sidharth\nPhilkhana",
+      image: "/team/me.jpeg",
+      role: "Founder\nFull Stack Developer",
+      url: "https://github.com/psidh",
+    },
+    {
+      name: "Manas\nMalla",
+      image: "/team/manas.jpeg",
+      role: "Chief Technical Officer\nGoogle Product Expert, Android",
+      url: "https://github.com/ManasMalla",
+    },
+  ];
+
+  const frontendTeam = [
+    {
+      name: "Kimish\nChoudhary",
+      image: "/team/kimish.jpeg",
+      role: "TBA",
+      url: "https://www.linkedin.com/in/kimishchoudhary/",
+    },
+    {
+      name: "Sudheer\nSahu",
+      image: "/team/sudheer.jpeg",
+      role: "TBA",
+      url: "https://www.linkedin.com/in/sudheer-sahu-97881824b/",
+    },
+    {
+      name: "Gowtam\nSashank",
+      image: "/team/gowtam.jpeg",
+      role: "TBA",
+      url: "",
+    },
+    {
+      name: "Michaelangelo Muchlongername",
+      image: "https://i.redd.it/h94nkec5ku9c1.jpeg",
+      role: "TBA",
+      url: "",
+    },
+  ];
+
+  const machineLearningTeam = [
+    {
+      name: "Likith\nBingumalla",
+      image:
+        "https://media.licdn.com/dms/image/D4E03AQEIqTj6MkJRmw/profile-displayphoto-shrink_200_200/0/1718206714910?e=2147483647&v=beta&t=dVKT3p3U546d7Bu2uwJt9f5EX1zXqAvEdcW4by7V75s",
+      role: "TBA",
+      url: "https://www.linkedin.com/in/bingumalla-likith-2633392b9",
+    },
+  ];
   return (
     <div>
       <div className="customBG grid grid-rows-[20px_1fr_20px] items-start justify-items-center min-h-screen p-8 pb-20 gap-16 relative overflow-clip">
@@ -81,7 +132,7 @@ export default function Home() {
       </div>
 
       <div>
-      {/* <h1 className="text-4xl font-bold my-8 text-center">Our Team</h1>
+        {/* <h1 className="text-4xl font-bold my-8 text-center">Our Team</h1>
       <div className="flex items-center justify-center md:space-x-16 h-fit">
         <div className="my-8 md:my-16 flex flex-col items-center justify-between">
           <img
@@ -110,98 +161,152 @@ export default function Home() {
           </p>
         </div>
       </div> */}
-      <h2 className="text-2xl md:text-4xl font-bold py-12 px-16 border-y-[1px] border-black">
-        Executive Team
-      </h2>
-      {/* <Line /> */}
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
-        {executive.map((person) => (
-          <div
-            key={person.name}
-            className="shrink-0 grow even:border-x-[1px] border-black flex flex-col justify-center w-full"
-          >
-            <img
-              src={person.image}
-              alt={person.name}
-              className="w-full h-44 md:h-72 object-cover mb-4"
-            />
-            <div className="p-4 flex">
-              <div>
-                <h2 className="text-lg md:text-xl font-semibold whitespace-pre-wrap mb-1">
-                  {person.name}
-                </h2>
-                <p className="opacity-70 font-light whitespace-pre-wrap">
-                  {person.role}
-                </p>
+        <h2 className="text-2xl md:text-4xl font-bold py-12 px-16 border-y-[1px] border-black">
+          Executive Team
+        </h2>
+        {/* <Line /> */}
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
+          {executive.map((person) => (
+            <div
+              key={person.name}
+              className="shrink-0 grow even:border-x-[1px] border-black flex flex-col justify-center w-full"
+            >
+              <img
+                src={person.image}
+                alt={person.name}
+                className="w-full h-44 md:h-72 object-cover mb-4"
+              />
+              <div className="p-4 flex">
+                <div>
+                  <h2 className="text-lg md:text-xl font-semibold whitespace-pre-wrap mb-1">
+                    {person.name}
+                  </h2>
+                  <p className="opacity-70 font-light whitespace-pre-wrap">
+                    {person.role}
+                  </p>
+                </div>
+                <Link className="ml-auto" href={person.url}>
+                  <FiArrowUpRight size={24} />
+                </Link>
               </div>
-              <Link className="ml-auto" href={person.url}>
-                <FiArrowUpRight size={24} />
-              </Link>
             </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="text-2xl md:text-4xl font-bold py-12 px-16 border-t-[1px] border-black">
-        Front-End Development
-      </h2>
-      {/* <Line /> */}
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
-        {frontendTeam.map((person) => (
-          <div
-            key={person.name}
-            className="shrink-0 grow border-y even:border border-black flex flex-col justify-center w-full"
-          >
-            <img
-              src={person.image}
-              alt={person.name}
-              className="w-full h-44 md:h-72 object-cover mb-4 border-b-[1px] border-black"
-            />
-            <div className="p-4 flex">
-              <div>
-                <h2 className="text-lg md:text-xl font-semibold whitespace-pre-wrap mb-1">
-                  {person.name}
-                </h2>
-                <p className="opacity-70 font-light">{person.role}</p>
+          ))}
+        </div>
+        <h2 className="text-2xl md:text-4xl font-bold py-12 px-16 border-t-[1px] border-black">
+          Front-End Development
+        </h2>
+        {/* <Line /> */}
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
+          {frontendTeam.map((person) => (
+            <div
+              key={person.name}
+              className="shrink-0 grow border-y even:border border-black flex flex-col justify-center w-full"
+            >
+              <img
+                src={person.image}
+                alt={person.name}
+                className="w-full h-44 md:h-72 object-cover mb-4 border-b-[1px] border-black"
+              />
+              <div className="p-4 flex">
+                <div>
+                  <h2 className="text-lg md:text-xl font-semibold whitespace-pre-wrap mb-1">
+                    {person.name}
+                  </h2>
+                  <p className="opacity-70 font-light">{person.role}</p>
+                </div>
+                <Link className="ml-auto" href={person.url}>
+                  <FiArrowUpRight size={24} />
+                </Link>
               </div>
-              <Link className="ml-auto" href={person.url}>
-                <FiArrowUpRight size={24} />
-              </Link>
             </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="text-2xl md:text-4xl font-bold py-12 px-16">
-        Machine Learning
-      </h2>
-      {/* <Line /> */}
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full border-[1px] border-black">
-        {machineLearningTeam.map((person) => (
-          <div
-            key={person.name}
-            className="shrink-0 grow border-y border border-black flex flex-col justify-center w-full"
-          >
-            <img
-              src={person.image}
-              alt={person.name}
-              className="w-full h-44 md:h-72 object-cover mb-4"
-            />
-            <div className="p-4 flex">
-              <div>
-                <h2 className="text-lg md:text-xl font-semibold whitespace-pre-wrap mb-1">
-                  {person.name}
-                </h2>
-                <p className="opacity-70 font-light">{person.role}</p>
+          ))}
+        </div>
+        <h2 className="text-2xl md:text-4xl font-bold py-12 px-16">
+          Machine Learning
+        </h2>
+        {/* <Line /> */}
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full border-[1px] border-black">
+          {machineLearningTeam.map((person) => (
+            <div
+              key={person.name}
+              className="shrink-0 grow border-y border border-black flex flex-col justify-center w-full"
+            >
+              <img
+                src={person.image}
+                alt={person.name}
+                className="w-full h-44 md:h-72 object-cover mb-4"
+              />
+              <div className="p-4 flex">
+                <div>
+                  <h2 className="text-lg md:text-xl font-semibold whitespace-pre-wrap mb-1">
+                    {person.name}
+                  </h2>
+                  <p className="opacity-70 font-light">{person.role}</p>
+                </div>
+                <Link className="ml-auto" href={person.url}>
+                  <FiArrowUpRight size={24} />
+                </Link>
               </div>
-              <Link className="ml-auto" href={person.url}>
-                <FiArrowUpRight size={24} />
-              </Link>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
       <footer>
+        <footer className="footer">
+          <div className="footer-container">
 
+            <div className="footer-section non-tech">
+              <h3>GitHub Community GITAM</h3>
+              <p>
+                A collaborative space for developers to share, contribute, and grow
+                open-source projects together
+              </p>
+            </div>
+
+            <div className="footer-section non-tech">
+              <h3>Tech</h3>
+              <a href="webdev.html">Web Development</a>
+              <a href="aiml.html">AI/ML</a>
+              <a href="uiux.html">UI/UX</a>
+              <a href="websec.html">Web Security</a>
+              <a href="ds.html">Data Science</a>
+
+            </div>
+
+            <div className="footer-section non-tech">
+              <h3>Non Tech</h3>
+              <a href="pr.html">PR</a>
+              <a href="content.html">Content</a>
+              <a href="design.html">Design</a>
+            </div>
+
+            <div className="footer-section non-tech">
+              <h3>GitHub GITAM Campuses</h3>
+              <a>Visakhapatnam</a>
+              <a>Hyderabad</a>
+              <a>Banglore</a>
+            </div>
+
+
+            <div className="footer-section non-tech">
+              <h3>Support and Feedback</h3>
+              <a href="https://forms.gle/QJBZLxagwwYtde1V6">Report Issues</a>
+              <a href="https://forms.gle/rP2nfMbBfrSawP9U7">Feedback Form</a>
+              <a href="https://forms.gle/44EXptFiCFMWnMhi6">Community Forums</a>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <p>© 2024 GitHub Community GITAM. All rights reserved</p>
+
+            <div className="social-icons">
+              <a href="https://www.instagram.com/githubcommunitygitam/" target="_blank" aria-label="Instagram" className="fab fa-instagram"></a>
+              <a href="https://chat.whatsapp.com/GNHGWxEbHXZLYkDuuTdHRO" target="_blank" aria-label="WhatsApp" className="fab fa-whatsapp"></a>
+              <a href="https://www.linkedin.com/company/githubcommunitygitam/posts/?feedView=all" target="_blank" aria-label="LinkedIn" className="fab fa-linkedin"></a>
+              <a href="https://github.com/github-community-gitam" target="_blank" aria-label="github" className="fab fa-github"></a>
+            </div>
+          </div>
+        </footer>
       </footer>
     </div>
   );
