@@ -6,13 +6,13 @@ export default function Home() {
   const executive = [
     {
       name: "Sidharth\nPhilkhana",
-      image: "/team/me.jpeg",
+      image: "https://github.com/psidh.png",
       role: "Founder\nFull Stack Developer",
       url: "https://github.com/psidh",
     },
     {
       name: "Manas\nMalla",
-      image: "/team/manas.jpeg",
+      image: "https://github.com/manasmalla.png",
       role: "Chief Technical Officer\nGoogle Product Expert, Android",
       url: "https://github.com/ManasMalla",
     },
@@ -20,19 +20,19 @@ export default function Home() {
 
   const frontendTeam = [
     {
-      name: "Kimish\nChoudhary",
-      image: "/team/kimish.jpeg",
+      name: "Kavya\nChandana",
+      image: "https://github.com/kavya-chandana.png",
       role: "TBA",
       url: "https://www.linkedin.com/in/kimishchoudhary/",
     },
     {
-      name: "Sudheer\nSahu",
-      image: "/team/sudheer.jpeg",
+      name: "ANC\nACB",
+      image: "/team/abc.jpeg",
       role: "TBA",
       url: "https://www.linkedin.com/in/sudheer-sahu-97881824b/",
     },
     {
-      name: "Gowtam\nSashank",
+      name: "XYZ\nYZA",
       image: "/team/gowtam.jpeg",
       role: "TBA",
       url: "",
@@ -47,9 +47,9 @@ export default function Home() {
 
   const machineLearningTeam = [
     {
-      name: "Likith\nBingumalla",
+      name: "ABC\nXUZ",
       image:
-        "https://media.licdn.com/dms/image/D4E03AQEIqTj6MkJRmw/profile-displayphoto-shrink_200_200/0/1718206714910?e=2147483647&v=beta&t=dVKT3p3U546d7Bu2uwJt9f5EX1zXqAvEdcW4by7V75s",
+        "https://github.com/SampathBalivada.png",
       role: "TBA",
       url: "https://www.linkedin.com/in/bingumalla-likith-2633392b9",
     },
@@ -87,7 +87,7 @@ export default function Home() {
             Building the largest bunch of open source developers.
           </p>
           <p className="font-normal w-fit text-center mx-auto" >Code • Collaborate • Create</p>
-          <p className="w-[60%] font-normal text-wrap text-center mx-auto">Whether you&apos;re a coder,designer, or tech enthusiast, GitHub Community GITAM is for you! Stay updated with our events and initiatives on social media.</p>
+          <p className="w-[60%] font-normal text-wrap text-center mx-auto">Whether you're a coder, designer, or tech enthusiast, GitHub Community GITAM is for you! Stay updated with our events and initiatives on social media.</p>
           <div className="flex justify-center items-center gap-6 mx-auto">
             <button className="joinNow text-sm font-bold">Join Now</button>
             <button className="knowMore text-sm font-medium">Know More</button>
@@ -108,21 +108,21 @@ export default function Home() {
           <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
 
             <p className="text-end text-xl font-bold">25th</p>
-            <p className="text-end mb-3">Dec&apos;24</p>
+            <p className="text-end mb-3">Dec'24</p>
             <p className="text-xl">GIT FUSION</p>
             <p className="text-[#99d5ff]">Cotton Bhavan</p>
             <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
           </div>
           <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
             <p className="text-end text-xl font-bold">25th</p>
-            <p className="text-end mb-3">Dec&apos;24</p>
+            <p className="text-end mb-3">Dec'24</p>
             <p className="text-xl">GIT FUSION</p>
             <p className="text-[#99d5ff]">Cotton Bhavan</p>
             <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
           </div>
           <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
             <p className="text-end text-xl font-bold">25th</p>
-            <p className="text-end mb-3">Dec&apos;24</p>
+            <p className="text-end mb-3">Dec'24</p>
             <p className="text-xl">GIT FUSION</p>
             <p className="text-[#99d5ff]">Cotton Bhavan</p>
             <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
@@ -130,7 +130,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      <div className="px-6 py-4">
         {/* <h1 className="text-4xl font-bold my-8 text-center">Our Team</h1>
       <div className="flex items-center justify-center md:space-x-16 h-fit">
         <div className="my-8 md:my-16 flex flex-col items-center justify-between">
