@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { FiArrowUpRight } from "react-icons/fi";
