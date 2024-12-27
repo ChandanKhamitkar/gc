@@ -87,7 +87,7 @@ export default function Home() {
             Building the largest bunch of open source developers.
           </p>
           <p className="font-normal w-fit text-center mx-auto" >Code • Collaborate • Create</p>
-          <p className="w-[60%] font-normal text-wrap text-center mx-auto">Whether you're a coder, designer, or tech enthusiast, GitHub Community GITAM is for you! Stay updated with our events and initiatives on social media.</p>
+          <p className="w-[60%] font-normal text-wrap text-center mx-auto">Whether you&apos;re a coder, designer, or tech enthusiast, GitHub Community GITAM is for you! Stay updated with our events and initiatives on social media.</p>
           <div className="flex justify-center items-center gap-6 mx-auto">
             <button className="joinNow text-sm font-bold">Join Now</button>
             <button className="knowMore text-sm font-medium">Know More</button>
@@ -108,21 +108,21 @@ export default function Home() {
           <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
 
             <p className="text-end text-xl font-bold">25th</p>
-            <p className="text-end mb-3">Dec'24</p>
+            <p className="text-end mb-3">Dec&apos;24</p>
             <p className="text-xl">GIT FUSION</p>
             <p className="text-[#99d5ff]">Cotton Bhavan</p>
             <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
           </div>
           <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
             <p className="text-end text-xl font-bold">25th</p>
-            <p className="text-end mb-3">Dec'24</p>
+            <p className="text-end mb-3">Dec&apos;24</p>
             <p className="text-xl">GIT FUSION</p>
             <p className="text-[#99d5ff]">Cotton Bhavan</p>
             <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
           </div>
           <div className="bg-white/15 text-white w-[350px] px-6 py-4 rounded-2xl">
             <p className="text-end text-xl font-bold">25th</p>
-            <p className="text-end mb-3">Dec'24</p>
+            <p className="text-end mb-3">Dec&apos;24</p>
             <p className="text-xl">GIT FUSION</p>
             <p className="text-[#99d5ff]">Cotton Bhavan</p>
             <p className="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto dolore nihil veniam officiis possimus</p>
